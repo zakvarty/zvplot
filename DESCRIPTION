@@ -1,12 +1,19 @@
 Package: zvplot
-Title: What the Package Does (One Line, Title Case)
+Title: Theme and utilites for ggplots (and other graphics) in a personal style
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person(
+      given = "Zak",
+      family = "Varty",
+      email = "z.varty@imperial.ac.uk",
+      role = c("aut", "cre")
+    )
+Description: Functions and colour defintions to help create and export ggplot2 plots in the style that is 
+    consistent with that of zakvarty.com. The two primary functions style and export ggplot plots.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
