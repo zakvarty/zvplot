@@ -4,7 +4,6 @@
 #'
 #' @return `string`
 #' @export
-#'
 #' @examples
 #' theme_zv()
 #' theme_zv("Hello, World!")
