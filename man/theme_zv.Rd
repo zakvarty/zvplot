@@ -2,20 +2,35 @@
 % Please edit documentation in R/theme_zv.R
 \name{theme_zv}
 \alias{theme_zv}
-\title{A place-holder function for my ggplot theme}
+\title{Personal theme for {ggplot2} plots}
 \usage{
-theme_zv(string = "This is a placeholder function")
+theme_zv(
+  base_family = "Oxygen",
+  title_family = "Oswald",
+  bg_colour = zv_white,
+  text_colour = zv_black,
+  base_size = 12,
+  base_line_size = base_size/22,
+  base_rect_size = base_size/22
+)
 }
 \arguments{
-\item{string}{a character string to return}
-}
-\value{
-\code{string}
+\item{base_family}{Name of font family to use for most of the text in the
+plot. Default "Oxygen".}
+
+\item{title_family}{Name of font family to use for title of the plot.
+Default "Oswald".}
+
+\item{bg_colour}{Background colour of plot. Default "zv_white".}
+
+\item{text_colour}{Text colour in plot. Default "zv_black".}
+
+\item{base_size}{Base size of text. Default 11.}
+
+\item{base_line_size}{Base size for line elements. Default is base_size / 22.}
+
+\item{base_rect_size}{Base size for rectangle elements. Default is base_size / 22.}
 }
 \description{
-A place-holder function for my ggplot theme
-}
-\examples{
-theme_zv()
-theme_zv("Hello, World!")
+A complete theme based on theme_minimal
 }
