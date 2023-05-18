@@ -4,7 +4,7 @@
 \alias{scale_fill_zv_d}
 \title{Change fill in ggplot for discrete variables}
 \usage{
-scale_fill_zv_d(palette_name, ...)
+scale_fill_zv_d(palette_name = "set_qual", ...)
 }
 \arguments{
 \item{palette_name}{Name of Palette.}

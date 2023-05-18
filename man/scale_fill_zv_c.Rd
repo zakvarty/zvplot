@@ -4,7 +4,7 @@
 \alias{scale_fill_zv_c}
 \title{Change fill in ggplot for continuous variables}
 \usage{
-scale_fill_zv_c(palette_name, ...)
+scale_fill_zv_c(palette_name = "seq_grey", ...)
 }
 \arguments{
 \item{palette_name}{Name of Palette.}

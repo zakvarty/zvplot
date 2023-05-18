@@ -14,11 +14,9 @@
 zv_palettes <- function(palette_name, n, type = c("discrete", "continuous")) {
 
   # input handling
+  palette <- zv_colours[[palette_name]][[1]]
   if (missing(n)) { n <- length(palette) }
   type <- match.arg(type,choices = c("discrete", "continuous"))
-
-
-  palette <- zv_colours[[palette_name]][[1]]
 
   out <- switch(type,
     continuous = grDevices::colorRampPalette(palette)(n),
@@ -85,7 +83,7 @@ print_all_palettes <- function() {
 #' @param palette_name Name of palette.
 #' @param ... other arguments to be passed to \code{scale_colour_manual}
 #' @export
-scale_colour_zv_d <- function(palette_name, ...) {
+scale_colour_zv_d <- function(palette_name = "set_qual", ...) {
   ggplot2::scale_colour_manual(values = zv_palettes(palette_name, type = "discrete"), ...)
 }
 
@@ -100,7 +98,7 @@ scale_color_zv_d <- scale_colour_zv_d
 #' @param palette_name Name of Palette.
 #' @param ... other arguments to be passed to \code{scale_fill_manual}
 #' @export
-scale_fill_zv_d <- function(palette_name, ...) {
+scale_fill_zv_d <- function(palette_name = "set_qual", ...) {
   ggplot2::scale_fill_manual(values = zv_palettes(palette_name, type = "discrete"), ...)
 }
 
@@ -108,7 +106,7 @@ scale_fill_zv_d <- function(palette_name, ...) {
 #' @param palette_name Name of Palette.
 #' @param ... other arguments to be passed to \code{scale_colour_gradientn}
 #' @export
-scale_colour_zv_c <- function(palette_name, ...) {
+scale_colour_zv_c <- function(palette_name = "seq_grey", ...) {
   ggplot2::scale_colour_gradientn(colours = zv_palettes(palette_name = palette_name, type = "continuous"), ...)
 }
 
@@ -122,6 +120,6 @@ scale_color_zv_c <- scale_colour_zv_c
 #' @param palette_name Name of Palette.
 #' @param ... other arguments to be passed to \code{scale_fill_gradientn}
 #' @export
-scale_fill_zv_c <- function(palette_name, ...) {
+scale_fill_zv_c <- function(palette_name = "seq_grey", ...) {
   ggplot2::scale_fill_gradientn(colours = zv_palettes(palette_name = palette_name, type = "continuous"), ...)
 }

@@ -4,7 +4,7 @@
 \alias{scale_color_zv_d}
 \title{Change colours in ggplot for discrete variables}
 \usage{
-scale_color_zv_d(palette_name, ...)
+scale_color_zv_d(palette_name = "set_qual", ...)
 }
 \arguments{
 \item{palette_name}{Name of palette.}

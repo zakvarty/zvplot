@@ -4,7 +4,7 @@
 \alias{scale_colour_zv_c}
 \title{Change colours in ggplot for continuous variables}
 \usage{
-scale_colour_zv_c(palette_name, ...)
+scale_colour_zv_c(palette_name = "seq_grey", ...)
 }
 \arguments{
 \item{palette_name}{Name of Palette.}
