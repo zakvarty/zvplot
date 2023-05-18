@@ -104,6 +104,7 @@ zv_colours <- list(
     "#afdaff", "#c2e3ff", "#d6ecff",
     "#eaf5ff", "#fdfeff")),
   set_qual = list(c(
+    "#222222",
     "#E87800", "#0AB3C7", "#C81E87",
     "#3D52D5", "#C0E15C", "#104B6D",
     "#FFACEC", "#166D2A", "#FE74FE",
