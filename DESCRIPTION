@@ -13,7 +13,7 @@ Description: Functions and colour defintions to help create and export ggplot2 p
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
@@ -24,3 +24,6 @@ Imports:
     magrittr,
     showtext,
     sysfonts
+Depends: 
+    R (>= 2.10)
+LazyData: true

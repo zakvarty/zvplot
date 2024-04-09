@@ -1,0 +1,15 @@
+#' Anscombe's Quartet of ‘Identical’ Simple Linear Regressions in Tidy Format
+#'
+#' Four \eqn{x}-\eqn{y} datasets which have the same traditional statistical properties
+#' (mean, variance, correlation, regression line, etc.), yet are quite different.
+#'
+#' @format ## `anscombe_tidy`
+#' A data frame with 11 observations on 3 variables:
+#' \describe{
+#'   \item{x}{Integer values between 4 and 19. For sets 1 to 3, these are the sequence 4:14. For set 4 these are specially arranged values of either 8 or 19.}
+#'   \item{y}{Numbers in the range (3, 12.5) giving each set a mean of 7.5 and standard deviation of 2.03.}
+#'   \item{set}{The dataset within the quartet to which each data point belongs. Integer values between 1 and 4.}
+#' }
+#' @source Tufte, Edward R. (1989). _The Visual Display of Quantitative Information_, 13–14. Graphics Press. (Via the {datasets} package)
+#' @references Anscombe, Francis J. (1973). Graphs in statistical analysis. _The American Statistician_, **27**, 17–21. <doi:10.2307/2682899>.
+"anscombe_tidy"
