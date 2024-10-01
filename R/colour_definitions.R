@@ -14,6 +14,14 @@ zv_light_grey <- c("#EEEEEE")
 
 #' Define global colours
 #' @export
+zv_light_gray <- c("#EEEEEE")
+
+#' Define global colours
+#' @export
+zv_mid_grey <- c("#555555")
+
+#' Define global colours
+#' @export
 zv_mid_gray <- c("#555555")
 
 #' Define global colours
