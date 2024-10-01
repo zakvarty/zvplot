@@ -40,7 +40,7 @@ squares <- function(n_rows = 5, n_cols = 10, gap_size = 0.1, neutrals = NULL, ac
   id <- vec_interleave(squares$id, squares$id, squares$id, squares$id)
   x <- vec_interleave(squares$x_min, squares$x_max, squares$x_max, squares$x_min)
   y <- vec_interleave(squares$y_min, squares$y_min, squares$y_max, squares$y_max)
-  value <- sample(x = c(neutrals, accents), size = n_squares)
+  value <- sample(x = c(neutrals, accents), size = n_squares, replace = TRUE)
   value <- rep(value, each = 4)
   plotting <- data.frame(id, x, y, value)
 
